@@ -76,16 +76,12 @@ module.exports = {
         const questionsToSave = parsedQuestions.filter(item => !existingQuestions.includes(JSON.stringify(item)))
 
         if (config.qnaMakerApiKey) {
-          return storage.insert(questionsToSave.map(question => ({ ...question, enabled: true })))
+          recordCsvUploadStatus(csvUploadStatusId, `Inserting ${questionsToSave.length} questions in bulk`)
         }
 
-        let questionsSavedCount = 0
-        return Promise.each(questionsToSave, question =>
-          storage.insert({ ...question, enabled: true }).then(() => {
-            questionsSavedCount += 1
-            recordCsvUploadStatus(csvUploadStatusId, `Saved ${questionsSavedCount}/${questionsToSave.length} questions`)
-          })
-        )
+        const statusCb = processedCount =>
+          recordCsvUploadStatus(csvUploadStatusId, `Saved ${processedCount}/${questionsToSave.length} questions`)
+        return storage.insert(questionsToSave.map(question => ({ ...question, enabled: true })), statusCb)
       },
 
       /**
@@ -209,7 +205,10 @@ module.exports = {
       recordCsvUploadStatus(csvUploadStatusId, 'Deleting existing questions')
       if (yn(req.body.isReplace)) {
         const questions = await this.storage.all()
-        await this.storage.delete(questions.map(({ id }) => id))
+
+        const statusCb = processedCount =>
+          recordCsvUploadStatus(csvUploadStatusId, `Deleted ${processedCount}/${questions.length} questions`)
+        await this.storage.delete(questions.map(({ id }) => id), statusCb)
       }
 
       try {
