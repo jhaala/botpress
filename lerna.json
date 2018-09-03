@@ -1,14 +1,6 @@
 {
-  "lerna": "2.9.0",
-  "packages": [
-    "packages/functionals/*",
-    "packages/channels/*",
-    "packages/skills/*",
-    "packages/utils/*",
-    "packages/core/*",
-    "packages",
-    "packages/dev-bot"
-  ],
+  "lerna": "3.2.1",
+  "packages": ["packages/*"],
   "version": "10.34.0",
-  "npmClient": "yarn"
+  "useWorkspaces": true
 }

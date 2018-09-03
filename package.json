@@ -9,24 +9,29 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^0.14.3",
-    "lerna": "^2.9.0",
+    "lerna": "^3.2.1",
     "lint-staged": "4.3.0",
     "prettier": "1.7.4"
   },
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "precommit": "lint-staged",
     "lint": "eslint packages/**/{src,lib,tests}/**/*.{js,jsx}",
     "bootstrap": "yarn && lerna bootstrap && lerna run compile && cd packages/core/botpress && yarn link",
     "start": "cd packages/core/botpress && yarn run watch",
     "init-foobot": "cd .. && node botpress/packages/core/botpress/bin/botpress init foobot --yes && cd foobot && yarn link botpress && yarn"
   },
   "lint-staged": {
-    "*.{js,jsx}": ["prettier --write", "eslint", "git add"],
-    "*.{json,css,scss}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "*.{json,css,scss}": [
+      "prettier --write",
+      "git add"
+    ]
   },
-  "pre-commit": {
-    "run": "precommit",
-    "silent": true
-  }
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
