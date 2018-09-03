@@ -22,7 +22,7 @@ yarn add @botpress/nlu
 
 In Botpress, NLU is acheived by connecting with 3rd-party providers such as [Rasa NLU](http://nlu.rasa.ai), [Microsoft LUIS](https://www.luis.ai/), [Google DialogFlow](dialogflow.com) or [IBM Watson NLU](https://www.ibm.com/watson/services/natural-language-understanding/).
 
-> **Note:** For this tutorial, we will use the native (built-in) NLU engine, which is useful for testing purposes or simple classification. For more complex classification and entity extraction, consider [Switching to Rasa or Luis](https://github.com/botpress/botpress/tree/master/packages/functionals/botpress-nlu).
+> **Note:** For this tutorial, we will use the native (built-in) NLU engine, which is useful for testing purposes or simple classification. For more complex classification and entity extraction, consider [Switching to Rasa or Luis](https://github.com/botpress/botpress/tree/master/packages/botpress-nlu).
 
 ## Intent Classification
 
@@ -52,7 +52,7 @@ Botpress abstracts the different NLU providers and provides a clean, easy-to-use
 
 For this tutorial, there are two user intents that we want to support: `play` and `see_leaderboard`. A real production bot would usually try to understand more things and be more complete, but for this tutorial, it will be enough.
 
-First, install the [`@botpress/nlu`](https://github.com/botpress/botpress/tree/master/packages/functionals/botpress-nlu) module.
+First, install the [`@botpress/nlu`](https://github.com/botpress/botpress/tree/master/packages/botpress-nlu) module.
 
 Once that's done, restart your bot. You should see a new "NLU" item in the left menu. Open it.
 

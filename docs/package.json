@@ -13,6 +13,6 @@
   },
   "scripts": {
     "start": "yarn install",
-    "gen-reference": "jsdoc ../packages/core/botpress/src -c ./jsdoc.conf.json"
+    "gen-reference": "jsdoc ../packages/botpress/src -c ./jsdoc.conf.json"
   }
 }

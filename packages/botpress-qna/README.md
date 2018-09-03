@@ -9,7 +9,7 @@ It either relies on the NLU module or on [Microsoft QnA Maker](https://www.qnama
 ⚠️ **This module only works with the new [Botpress X](https://github.com/botpress/botpress).**
 
 - Install the peer dependencies and the module iteslf `yarn add @botpress/builtins @botpress/nlu @botpress/qna` (note: you can skip the `builtins` module if you use the custom text renderer.)
-- Configure [NLU](https://github.com/botpress/botpress/tree/master/packages/functionals/botpress-nlu#botpress-nlu-) or register at [Microsoft QnA Maker](https://www.qnamaker.ai) and provide the API key for it
+- Configure [NLU](https://github.com/botpress/botpress/tree/master/packages/botpress-nlu#botpress-nlu-) or register at [Microsoft QnA Maker](https://www.qnamaker.ai) and provide the API key for it
 
 # Configuration
 
@@ -60,7 +60,7 @@ await bp.qna.import(questions, { format: 'json' })
 
 // Importing questions from csv-string
 // Note: consequtive questions with similar answer will be merged into one record with multiple questions
-const questionsCsv = 
+const questionsCsv =
 `"Question1","text","Answer1"
 "Question2","text","Answer1"
 "Question3","redirect","main.flow.json#some-node"`
@@ -72,7 +72,7 @@ const questionsExported = await bp.qna.export() // Should return structure simil
 
 const questionsFlatExported = await bp.qna.export({ flat: true })
 // Should return a flat structure with question-string in each record like this (might be useful for exporting to CSV):
-// 
+//
 // [
 //   { question: 'Question1', action: 'text', answer: 'Answer1' },
 //   { question: 'Question2', action: 'text', answer: 'Answer1' },

@@ -2,7 +2,7 @@
 layout: guide
 ---
 
-The [Botpress Analytics (@botpress/analytics)](https://github.com/botpress/botpress/tree/master/packages/functionals/botpress-analytics) package allows you to monitor the bots total user count, retention and lots more.
+The [Botpress Analytics (@botpress/analytics)](https://github.com/botpress/botpress/tree/master/packages/botpress-analytics) package allows you to monitor the bots total user count, retention and lots more.
 
 To perform the basic setup, you will need to install the package (`npm install --save @botpress/analytics`) and initialize it by adding the following snippet to your `src/index.js` file
 
@@ -39,7 +39,7 @@ bp.analytics.custom.addGraph({
 })
 ```
 
-Parameters that `addGraph` accepts are described in the [package README](https://github.com/botpress/botpress/tree/master/packages/functionals/botpress-analytics).
+Parameters that `addGraph` accepts are described in the [package README](https://github.com/botpress/botpress/tree/master/packages/botpress-analytics).
 
 Secondly, you need to set up a trigger to record your custom analytics as a user interacts with your bot. Below we set up the two triggers needed for our new metrics set up above.
 

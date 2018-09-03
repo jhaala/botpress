@@ -89,13 +89,13 @@ You can embed the bot on your website with the following snippet. Just make sure
 ```
 
 
-For more information about how to use the website widget, be sure to [read through this](https://github.com/botpress/botpress/tree/master/packages/channels/botpress-channel-web).
+For more information about how to use the website widget, be sure to [read through this](https://github.com/botpress/botpress/tree/master/packages/botpress-channel-web).
 
 ## Deploying to Self-hosted Server
 
 Rather than Heroku you may choose to deploy to self-hosted server. This gives you more flexibility but may require deeper dev-ops knowledge. Having said that you can start with this simple deployment tutorial.
 
-1. Set up your self-hosted machine and ssh into it. We'll use DigitalOcean's droplet running Ubuntu in our example. 
+1. Set up your self-hosted machine and ssh into it. We'll use DigitalOcean's droplet running Ubuntu in our example.
 2. Add nodejs-sources: `sudo curl -sL https://deb.nodesource.com/setup_8.x | bash`
 3. Install nodejs `sudo apt-get install -y nodejs build-essential`
 4. Install npm and pm2 globally `npm i -g npm && npm i -g pm2`
@@ -109,7 +109,7 @@ Rather than Heroku you may choose to deploy to self-hosted server. This gives yo
       server {
         server_name your.domain.com;
         listen 80;
-      
+
         location / {
           proxy_set_header X-Real-IP $remote_addr;
           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;

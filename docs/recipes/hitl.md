@@ -5,7 +5,7 @@ layout: guide
 Botpress allows you to build a powerful tool for autonomous communication with your users.
 However there may be cases where it is difficult or very resource-consuming to implement a conversation flow within the bot. At this point you may consider having a human take over the conversation and continue to communicate with your user.
 
-The [Human-in-the-Loop (@botpress/hitl)](https://github.com/botpress/botpress/tree/master/packages/functionals/botpress-hitl) module allows you to do just that! 
+The [Human-in-the-Loop (@botpress/hitl)](https://github.com/botpress/botpress/tree/master/packages/botpress-hitl) module allows you to do just that!
 
 Human-in-the-Loop is currently supported on `channel-web` and `channel-messenger`.
 
@@ -38,7 +38,7 @@ The agent can then navigate to the appropriate conversation and take over the co
 
 # Resuming conversation
 
-Once the agent is done communicating with the user, they can unpause the conversation. 
+Once the agent is done communicating with the user, they can unpause the conversation.
 
 It is also possible for the user to unpause the conversation programmatically by triggering an action that calls `bp.hitl.unpause(platform, userId)`. This is implemented in the example below.
 

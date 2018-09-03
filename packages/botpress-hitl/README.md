@@ -20,7 +20,7 @@ The HITL module should now be available in your bot UI, and the APIs exposed.
 
 By using this module, you can look to all your conversations at the same place. You don't have to use external connectors interface to follow your conversations.
 
-<img src='/packages/functionals/botpress-hitl/assets/hitl-screenshot.png' height='300px'>
+<img src='/packages/botpress-hitl/assets/hitl-screenshot.png' height='300px'>
 
 ### Filtering by status
 

@@ -1,4 +1,4 @@
-echo $(cat ../packages/core/botpress/package.json \
+echo $(cat ../packages/botpress/package.json \
 | grep version \
 | head -1 \
 | awk -F: '{ print $2 }' \

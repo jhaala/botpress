@@ -2,7 +2,7 @@
 layout: guide
 ---
 
-Webchat carousel is a useful way of showing a collection of elements. The example below shows two different types of element, shown in a responsive layout, depending on the width of the users device. 
+Webchat carousel is a useful way of showing a collection of elements. The example below shows two different types of element, shown in a responsive layout, depending on the width of the users device.
 
 ```js
 {
@@ -30,4 +30,4 @@ Webchat carousel is a useful way of showing a collection of elements. The exampl
 },
 ```
 
-You can check the [package README](https://github.com/botpress/botpress/tree/master/packages/channels/botpress-channel-web) for all the options you can pass into the carousel object.
+You can check the [package README](https://github.com/botpress/botpress/tree/master/packages/botpress-channel-web) for all the options you can pass into the carousel object.

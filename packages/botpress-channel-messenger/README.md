@@ -14,7 +14,7 @@ npm i @botpress/channel-messenger
 <img alt='Create App' src='assets/create_new_app_fb.png' />
 2)
 <img alt='Set Up Messenger' src='assets/set_up_ms_fb.png' />
-3. Get all required fields from `config/channel-messenger.json` [config template](https://github.com/botpress/botpress/blob/master/packages/channels/botpress-channel-messenger/config.json)
+3. Get all required fields from `config/channel-messenger.json` [config template](https://github.com/botpress/botpress/blob/master/packages/botpress-channel-messenger/config.json)
 
 <p>1)</p>
 <img alt='App ID' src='assets/app_id.png' />
@@ -24,11 +24,11 @@ npm i @botpress/channel-messenger
 <img alt='App Token' src='assets/token_fb.png' />
 4)
 <img alt='Webhook' src='assets/webhook_fb.png' />
-4. In you facebook-app configuration at https://developers.facebook.com/ set webhook (an url should be something like `https://[bot-hostname]/api/botpress-messenger/webhook`) and chose [next option.](https://github.com/dmytropanontko/botpress/blob/docs/messenger-tutorial/packages/channels/botpress-channel-messenger/config.json#L41). (webhook template `https://[bot-hostname]/api/botpress-messenger/webhook`)
+4. In you facebook-app configuration at https://developers.facebook.com/ set webhook (an url should be something like `https://[bot-hostname]/api/botpress-messenger/webhook`) and chose [next option.](https://github.com/dmytropanontko/botpress/blob/docs/messenger-tutorial/packages/botpress-channel-messenger/config.json#L41). (webhook template `https://[bot-hostname]/api/botpress-messenger/webhook`)
 
 ## Explaining config keys
 
-[Config template](https://github.com/dmytropanontko/botpress/blob/docs/messenger-tutorial/packages/channels/botpress-channel-messenger/config.json)
+[Config template](https://github.com/dmytropanontko/botpress/blob/docs/messenger-tutorial/packages/botpress-channel-messenger/config.json)
 
 `"displayGetStarted"` - exclude/include interaction with Get Started. `Default: true`
 
@@ -97,7 +97,7 @@ bp.hear({ platform: 'facebook', type: 'postback', text: 'GET_STARTED' }, (event,
 
 In fact, this module preprocesses almost all types of message (message, attachment, postback, quick_reply, delivery, read, optin, referrals...) and send them to incoming middlewares. When you build a bot or a module, you can access to all information about incoming messages that have been send to  middlewares.
 
-<!--- 
+<!---
   need investigation for parameters
   https://botpress.io/docs/latest/reference/Middleware.html#.Event
   Do I need remove `user` parameter?

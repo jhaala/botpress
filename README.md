@@ -1,1 +1,1 @@
-packages/core/botpress/README.md
+packages/botpress/README.md

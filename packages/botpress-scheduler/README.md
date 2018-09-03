@@ -4,7 +4,7 @@ Provides an interface and APIs to schedule one-off and recurring tasks.
 
 **Support connectors:** This module is not dependent on any connector module
 
-<img src='/packages/functionals/botpress-scheduler/assets/screenshot.jpg' height='300px'>
+<img src='/packages/botpress-scheduler/assets/screenshot.jpg' height='300px'>
 
 ## Get started
 
@@ -56,7 +56,7 @@ Deletes all the historical tasks.
 `scheduler` exposes `bp.scheduler.add` and `bp.scheduler.remove` functions as public API so that it can be used within other packages:
 
 ```js
-await bp.scheduler.add({ 
+await bp.scheduler.add({
   id: 'Test Notification',
   schedule: '2018-06-30T18:00:00.000Z',
   action: `bp.notifications.send({ level: 'success', message: 'Schedule triggered successfully' })`,
