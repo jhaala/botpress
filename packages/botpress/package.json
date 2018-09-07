@@ -15,7 +15,7 @@
     "@botpress/util-roles": "^10.34.0",
     "axios": "^0.18.0",
     "bluebird": "^3.5.2",
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
     "commander": "^2.9.0",
     "compression": "^1.7.1",
