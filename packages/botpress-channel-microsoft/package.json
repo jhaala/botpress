@@ -46,6 +46,6 @@
   "dependencies": {
     "bluebird": "^3.5.2",
     "botbuilder": "^3.15.0",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.10"
   }
 }

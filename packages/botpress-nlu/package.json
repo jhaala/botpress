@@ -60,7 +60,7 @@
     "axios": "^0.18.0",
     "bluebird": "^3.5.2",
     "bluebird-retry": "^0.11.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.10",
     "mkdirp": "^0.5.1",
     "ms": "^2.1.1",
     "nanoid": "^1.0.1",

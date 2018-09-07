@@ -54,7 +54,7 @@
     "axios": "^0.18.0",
     "bluebird": "^3.5.2",
     "eventemitter2": "^4.0.0",
-    "lodash": "latest",
+    "lodash": "4.17.10",
     "lru-cache": "latest",
     "node-telegram-bot-api": "^0.30.0"
   }

@@ -61,7 +61,7 @@
     "bluebird-retry": "^0.11.0",
     "botpress-version-manager": "^1.0.2",
     "dateformat": "^1.0.12",
-    "lodash": "^4.17.2",
+    "lodash": "^4.17.10",
     "moment": "^2.16.0"
   }
 }
