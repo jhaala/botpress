@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^18.0",
     "bluebird": "^3.5.2"
   },
   "devDependencies": {

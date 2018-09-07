@@ -13,7 +13,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "@botpress/util-roles": "^10.34.0",
-    "axios": "^0.15.2",
+    "axios": "^0.18.0",
     "bluebird": "^3.5.2",
     "body-parser": "^1.15.2",
     "chalk": "^2.4.1",
