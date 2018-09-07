@@ -1,12 +1,12 @@
-import twilio from 'twilio'
-import qs from 'querystring'
-import _ from 'lodash'
-import bodyParser from 'body-parser'
+import twilio from 'twilio';
+//import qs from 'querystring'
+import _ from 'lodash';
+import bodyParser from 'body-parser';
 
-import { extractNumber } from './util'
-import UMM from './umm'
+import extractNumber from './util';
+import UMM from './umm';
 
-let client = null
+let client = null;
 
 module.exports = {
   config: {

@@ -10,7 +10,7 @@ import { sanitizeUserId } from './util'
 
 const userInitiatedMessageTypes = ['message', 'text', 'image', 'login_prompt', 'quick_reply', 'form', 'file', 'video']
 
-module.exports = (knex, config) => {
+export default (knex, config) => {
   const RECENT_CONVERSATION_LIFETIME = ms(config.recentConversationLifetime)
 
   const isLite = knex => {

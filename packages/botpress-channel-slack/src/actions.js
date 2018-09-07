@@ -144,7 +144,7 @@ const createRemoveReaction = (name, options = {}) => {
   })
 }
 
-module.exports = {
+export default {
   createText,
   createAttachments,
   createReaction,

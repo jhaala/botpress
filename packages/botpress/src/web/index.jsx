@@ -5,16 +5,16 @@ import ReactDOM from 'expose-loader?ReactDOM!react-dom'
 import axios from 'axios'
 import { getToken } from '~/util/Auth'
 
-import PropTypes from 'expose-loader?PropTypes!prop-types'
-import ReactBootstrap from 'expose-loader?ReactBootstrap!react-bootstrap'
-import ContentPickerWidget from 'expose-loader?BotpressContentPicker!~/components/Content/Select/Widget'
+//import PropTypes from 'expose-loader?PropTypes!prop-types'
+//import ReactBootstrap from 'expose-loader?ReactBootstrap!react-bootstrap'
+//import ContentPickerWidget from 'expose-loader?BotpressContentPicker!~/components/Content/Select/Widget'
 import { Provider } from 'react-redux'
 
 import store from './store'
 
 require('bootstrap/dist/css/bootstrap.css')
 require('storm-react-diagrams/dist/style.min.css')
-require('react-select/dist/react-select.css')
+require('./css/react-select.css')
 require('./theme.scss')
 
 const token = getToken()

@@ -103,7 +103,7 @@ function listSchedules() {
   return knex('broadcast_schedules').then()
 }
 
-module.exports = k => {
+export default k => {
   knex = k
   return { initialize, addSchedule, deleteSchedule, updateSchedule, listSchedules }
 }

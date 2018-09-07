@@ -4,7 +4,7 @@ import { Button, Modal } from 'react-bootstrap'
 
 import style from './style.scss'
 
-require('react-select/dist/react-select.css')
+require('../../../css/react-select.css')
 
 export default class EntitiesEditor extends React.Component {
   initialState = {

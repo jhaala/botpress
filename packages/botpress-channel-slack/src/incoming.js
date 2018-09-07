@@ -72,7 +72,7 @@ const OTHER_RTM_EVENTS = [
 
 const mentionRegex = new RegExp(/<@(\w+)>/gi)
 
-module.exports = (bp, slack) => {
+export default (bp, slack) => {
   const users = Users(bp, slack)
 
   const messagesCache = LRU({

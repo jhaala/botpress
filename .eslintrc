@@ -1,8 +1,9 @@
 {
-  // http://eslint.org/docs/rules/
   "parser": "babel-eslint",
 
-  "extends": ["prettier", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"/*, "prettier"*/],
+
+  "plugins": ["jest", "react"/*, "prettier"*/],
 
   "env": {
     "browser": true, // browser global variables.
@@ -22,12 +23,30 @@
     "es6": true // enable all ECMAScript 6 features except for modules.
   },
 
+  "settings": {
+    "react": {
+      "createClass": "createReactClass", // Regex for Component Factory to use,
+      // default to "createReactClass"
+      "pragma": "React",  // Pragma to use, default to "React"
+      "version": "15.0", // React version, default to the latest React stable release
+      "flowVersion": "0.53" // Flow version
+    },
+    // The names of any functions used to wrap the propTypes object, e.g. `forbidExtraProps`.
+    // If this isn't set, any propTypes wrapped in a function will be skipped.
+    "propWrapperFunctions": [ "forbidExtraProps" ]
+  },
+
   "globals": {
     "goog": true
   },
 
-  "plugins": ["prettier", "jest", "react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
 
+  // https://eslint.org/docs/rules/
   "rules": {
     "no-extra-semi": 1, // disallow unnecessary semicolons
     "no-inner-declarations": 2, // disallow function or variable declarations in nested blocks
@@ -51,9 +70,12 @@
     "no-array-constructor": 2,
     "no-new-object": 2,
 
-    "prettier/prettier": "error",
+    //"prettier/prettier": "error",
 
     "react/prop-types": 0,
-    "react/no-find-dom-node": 0
+    "react/no-find-dom-node": 0,
+
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   }
 }

@@ -17,7 +17,7 @@ const ERR_USER_ID_REQ = '`userId` is required and must be valid'
 const ERR_MSG_TYPE = '`type` is required and must be valid'
 const ERR_CONV_ID_REQ = '`conversationId` is required and must be valid'
 
-module.exports = async (bp, config) => {
+export default async (bp, config) => {
   const diskStorage = multer.diskStorage({
     limits: {
       files: 1,

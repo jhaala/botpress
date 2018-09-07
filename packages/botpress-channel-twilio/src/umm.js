@@ -2,7 +2,7 @@ import util from 'util'
 import _ from 'lodash'
 import Promise from 'bluebird'
 
-import { extractNumber } from './util'
+import extractNumber from './util'
 
 function PromisifyEvent(event) {
   if (!event._promise) {
@@ -60,7 +60,7 @@ function processOutgoing({ event, blocName, instruction }) {
   throw new Error(`Unrecognized instruction in Twilio in bloc '${blocName}': ${strRep}`)
 }
 
-module.exports = bp => {
+export default bp => {
   const [renderers, registerConnector] = _.at(bp, ['renderers', 'renderers.registerConnector'])
 
   renderers &&

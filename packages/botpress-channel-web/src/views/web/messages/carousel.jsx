@@ -4,8 +4,7 @@ import Slider from 'react-slick'
 
 import style from './style.scss'
 
-require('slick-carousel/slick/slick.css')
-require('slick-carousel/slick/slick-theme.css')
+require('../../../slick-carousel/slick.css')
 
 export default class CarouselMessage extends Component {
   constructor(props) {

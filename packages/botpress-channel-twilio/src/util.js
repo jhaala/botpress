@@ -15,4 +15,4 @@ function extractNumber(event) {
   return number
 }
 
-module.exports = { extractNumber }
+export default extractNumber;

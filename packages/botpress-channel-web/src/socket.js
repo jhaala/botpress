@@ -6,7 +6,7 @@ import db from './db'
 
 const outgoingTypes = ['text', 'login_prompt', 'file', 'carousel', 'custom']
 
-module.exports = async (bp, config) => {
+export default async (bp, config) => {
   const knex = await bp.db.get()
   const { appendBotMessage, getOrCreateRecentConversation } = db(knex, config)
   const { getOrCreateUser } = await users(bp, config)

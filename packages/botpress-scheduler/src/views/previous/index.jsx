@@ -4,7 +4,7 @@ import { ListGroupItem } from 'react-bootstrap'
 //import Toggle from 'react-toggle'
 import moment from 'moment'
 import classnames from 'classnames'
-//import { RIETextArea } from 'riek'
+//import { RIETextArea } from '@attently/riek'
 
 import 'react-toggle/style.css'
 import style from './style.scss'

@@ -256,7 +256,7 @@ function getSessionData(sessionId) {
     .then(messages => _.orderBy(messages, ['id'], ['asc']))
 }
 
-module.exports = k => {
+export default k => {
   knex = k
 
   return {

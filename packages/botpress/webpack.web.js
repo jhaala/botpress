@@ -94,8 +94,8 @@ const webConfig = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['stage-3', ['env', { targets: { browsers: ['last 2 versions'] } }], 'react'],
-              plugins: ['transform-class-properties'],
+              presets: [['@babel/preset-env', { targets: { browsers: ['last 2 versions'] } }], '@babel/preset-react'],
+              plugins: ['@babel/plugin-proposal-class-properties'],
               compact: true,
               babelrc: false,
               cacheDirectory: true

@@ -43,4 +43,5 @@ const getHumanExpression = (type, exp) => {
   }
 }
 
-module.exports = { getNextOccurence, validateExpression, getHumanExpression }
+export default { getNextOccurence, validateExpression, getHumanExpression }
+

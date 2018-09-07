@@ -1,6 +1,6 @@
 import sillyname from 'sillyname'
 
-module.exports = async bp => {
+export default async bp => {
   const knex = await bp.db.get()
 
   async function getOrCreateUser(userId, throwIfNotFound = false) {

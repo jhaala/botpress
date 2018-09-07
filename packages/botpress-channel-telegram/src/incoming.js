@@ -31,7 +31,7 @@ const actionEventTypes = [
   //  'callback_query',
 ]
 
-module.exports = (bp, telegram) => {
+export default (bp, telegram) => {
   const messagesCache = LRU({
     max: 10000,
     maxAge: 60 * 60 * 1000

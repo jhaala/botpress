@@ -291,7 +291,7 @@ const createWhitelistedDomains = domains => {
   })
 }
 
-module.exports = {
+export default {
   createText,
   createAttachment,
   createTemplate,

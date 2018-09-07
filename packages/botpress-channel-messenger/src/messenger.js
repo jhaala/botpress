@@ -784,4 +784,4 @@ class Messenger extends EventEmitter {
   }
 }
 
-module.exports = Messenger
+export default Messenger

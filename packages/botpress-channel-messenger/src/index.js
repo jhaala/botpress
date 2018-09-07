@@ -3,7 +3,7 @@ import _ from 'lodash'
 import Messenger from './messenger'
 //import actions from './actions'
 import outgoing from './outgoing'
-import incoming from './incoming'
+import * as incoming from './incoming'
 import Users from './users'
 import UMM from './umm'
 

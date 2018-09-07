@@ -105,7 +105,7 @@ const generate = async result => {
 
   console.log(showTemplateInfo(info))
 
-  for (const [name, content] of Object.entries(files)) {
+  for (let [name, content] of Object.entries(files)) {
     console.log(copyingFile(name))
     const compiled = _.template(content, { interpolate: /<%=([\s\S]+?)%>/g })
     const directory = path.dirname(name)

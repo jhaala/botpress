@@ -278,7 +278,7 @@ function getTemplates() {
   return []
 }
 
-module.exports = bp => {
+export default bp => {
   const [renderers, registerConnector] = _.at(bp, ['renderers', 'renderers.registerConnector'])
 
   renderers &&

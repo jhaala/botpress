@@ -42,7 +42,7 @@ function hasAttachment(url) {
     })
 }
 
-module.exports = k => {
+export default k => {
   knex = k
   return { initialize, addAttachment, getAttachment, hasAttachment }
 }

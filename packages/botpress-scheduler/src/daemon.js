@@ -106,7 +106,7 @@ const createDaemon = bp => {
   return { start, stop, revive }
 }
 
-module.exports = bp => {
+export default bp => {
   if (!daemon) {
     daemon = createDaemon(bp)
   }

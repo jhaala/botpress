@@ -229,7 +229,7 @@ function sendBroadcasts() {
     })
 }
 
-module.exports = botpress => {
+export default botpress => {
   bp = botpress
 
   bp.db.get().then(k => {

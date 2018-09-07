@@ -1,6 +1,6 @@
 import React from 'react'
 import { OverlayTrigger, Modal, ButtonToolbar, ButtonGroup, Button, Label, Alert, Badge } from 'react-bootstrap'
-import { RIEInput, RIESelect, RIETextArea } from 'riek'
+import { RIEInput, RIESelect, RIETextArea } from '@attently/riek'
 import chrono from 'chrono-node'
 import _ from 'lodash'
 import classnames from 'classnames'

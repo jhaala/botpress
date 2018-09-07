@@ -4,7 +4,7 @@ import Users from './users'
 import outgoing from './outgoing'
 import _ from 'lodash'
 
-module.exports = (bp, messenger) => {
+export default (bp, messenger) => {
   const users = Users(bp, messenger)
 
   const logger = bp.logger

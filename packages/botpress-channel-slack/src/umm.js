@@ -88,7 +88,7 @@ function processOutgoing({ event, blocName, instruction }) {
   throw new Error(`Unrecognized instruction on Slack in bloc '${blocName}': ${strRep}`)
 }
 
-module.exports = bp => {
+export default bp => {
   const [renderers, registerConnector] = _.at(bp, ['renderers', 'renderers.registerConnector'])
 
   renderers &&

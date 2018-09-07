@@ -43,7 +43,7 @@ const createText = (originalEvent, text) => {
   return createObject(originalEvent, text)
 }
 
-module.exports = {
+export default {
   createText,
   createObject
 }
