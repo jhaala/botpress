@@ -1,6 +1,6 @@
 {
   "name": "@botpress/scheduler",
-  "version": "10.34.0",
+  "version": "10.35.1",
   "description": "Schedule one-off and recurring tasks",
   "main": "bin/node.bundle.js",
   "botpress": {
@@ -8,10 +8,6 @@
     "menuIcon": "alarm_on",
     "webBundle": "bin/web.bundle.js"
   },
-  "keywords": [
-    "messenger",
-    "scheduler"
-  ],
   "version-manager": {
     "warn": "",
     "botpress-check": ">= 0.1",

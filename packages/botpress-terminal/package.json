@@ -1,7 +1,7 @@
 {
   "name": "@botpress/terminal",
-  "version": "10.34.0",
-  "description": "🖥   A command-line interface to run custom code on your bot while running",
+  "version": "10.35.1",
+  "description": "A command-line interface to run custom code on your bot while running",
   "main": "bin/node.bundle.js",
   "botpress": {
     "menuText": "Terminal",

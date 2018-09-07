@@ -1,6 +1,6 @@
 {
   "name": "@botpress/analytics",
-  "version": "10.34.0",
+  "version": "10.35.1",
   "description": "Provides high level analytics about your bot usage.",
   "main": "bin/node.bundle.js",
   "homepage": "https://github.com/botpress/modules",
@@ -16,10 +16,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [
-    "analytics",
-    "botpress"
-  ],
   "version-manager": {
     "warn": "",
     "botpress-check": ">= 0.1",
@@ -42,7 +38,7 @@
     "moment": "^2.15.2"
   },
   "peerDependencies": {
-    "botpress": ">= 10.0.0"
+    "botpress": ">= 10.35.1"
   },
   "devDependencies": {
     "@attently/riek": "^2.0.1",
