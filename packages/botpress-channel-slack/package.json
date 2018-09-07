@@ -60,6 +60,6 @@
     "bluebird": "^3.5.2",
     "botpress-version-manager": "^1.0.2",
     "lodash": "^4.17.10",
-    "lru-cache": "^4.0.2"
+    "lru-cache": "^4.1.3"
   }
 }
