@@ -68,7 +68,7 @@
     "botpress-version-manager": "^1.0.2",
     "cronstrue": "^0.8.0",
     "lodash": "^4.17.10",
-    "moment": "^2.17.1",
+    "moment": "^2.22.2",
     "validate-arguments": "0.0.8"
   }
 }

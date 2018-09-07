@@ -2,7 +2,8 @@
   "dependencies": {
     "axios": "^18.0",
     "bluebird": "^3.5.2",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

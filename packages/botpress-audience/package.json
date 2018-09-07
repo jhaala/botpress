@@ -36,7 +36,7 @@
   "dependencies": {
     "botpress-version-manager": "^1.0.4",
     "lodash": "^4.17.10",
-    "moment": "^2.18.1"
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
