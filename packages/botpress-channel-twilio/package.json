@@ -52,7 +52,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "bluebird": "^3.5.0",
+    "bluebird": "^3.5.2",
     "body-parser": "^1.17.2",
     "lodash": "^4.17.4",
     "querystring": "^0.2.0",

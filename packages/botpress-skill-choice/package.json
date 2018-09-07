@@ -25,7 +25,7 @@
   "author": "Botpress Team",
   "license": "AGPL-3.0-only",
   "peerDependencies": {
-    "botpress": ">= 10.0.10"
+    "botpress": ">= 10.35.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -51,6 +51,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "@botpress/util-sdk": "^10.34.0"
+    "@botpress/util-sdk": "^10.35.1"
   }
 }

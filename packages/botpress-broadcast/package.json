@@ -30,7 +30,7 @@
   "author": "Botpress",
   "license": "AGPL-3.0-only",
   "peerDependencies": {
-    "botpress": ">= 10.0.0"
+    "botpress": ">= 10.35.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -57,8 +57,8 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "bluebird": "^3.4.6",
-    "bluebird-retry": "^0.8.0",
+    "bluebird": "^3.5.2",
+    "bluebird-retry": "^0.11.0",
     "botpress-version-manager": "^1.0.2",
     "dateformat": "^1.0.12",
     "lodash": "^4.17.2",

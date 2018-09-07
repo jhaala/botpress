@@ -30,7 +30,7 @@
   "author": "Botpress Team",
   "license": "AGPL-3.0-only",
   "peerDependencies": {
-    "botpress": ">= 10.34.0"
+    "botpress": ">= 10.35.1"
   },
   "devDependencies": {
     "@attently/riek": "^2.0.1",
@@ -64,7 +64,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "bluebird": "^3.4.6",
+    "bluebird": "^3.5.2",
     "botpress-version-manager": "^1.0.2",
     "cronstrue": "^0.8.0",
     "lodash": "^4.17.2",
