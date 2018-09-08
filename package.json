@@ -1,47 +1,4 @@
 {
-  "dependencies": {
-    "axios": "^0.18.0",
-    "bluebird": "^3.5.2",
-    "body-parser": "^1.18.3",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "lru-cache": "^4.1.3"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-transform-async-to-generator": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.2",
-    "@commitlint/cli": "^6.1.3",
-    "@commitlint/config-conventional": "^6.1.3",
-    "babel-eslint": "^8.2.3",
-    "eslint": "^5.5.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-jest": "^21.22.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.11.1",
-    "husky": "^0.14.3",
-    "lerna": "^3.3.0",
-    "lint-staged": "7.2.2",
-    "prettier": "1.14.2",
-    "classnames": "^2.2.6",
-    "copy-webpack-plugin": "^4.5.2",
-    "core-js": "^2.5.7",
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
-    "node-sass": "^4.9.3",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
-    "react-select": "^2.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.17.2",
-    "webpack-node-externals": "^1.7.2"
-  },
   "scripts": {
     "lint": "eslint packages/**/{src,lib,tests}/**/*.{js,jsx}",
     "bootstrap": "yarn && lerna bootstrap && lerna run compile && cd packages/botpress && yarn link",
@@ -62,5 +19,8 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "3.3.0"
+  }
 }
